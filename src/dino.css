@@ -1,0 +1,71 @@
+.game {
+  width: 500px;
+  height: 300px;
+  border: 10px solid purple;
+  margin: auto;
+  border-radius: 10px;
+  background-image: url(images/background.gif);
+  z-index: 1;
+}
+
+.dino {
+  width: 100px;
+  height: 100px;
+  background-image: url(images/character.png);
+  background-size: 100px 100px;
+  z-index: 2;
+
+  position: relative;
+  top: 150px;
+  left: 0px;
+
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  30% {
+    top: 130px;
+  }
+
+  50% {
+    top: 80px;
+  }
+
+  80% {
+    top: 130px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+
+.tree {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 45px;
+  left: 580px;
+
+  background-image: url("images/tree.png");
+  background-size: 100px 100px;
+
+  animation: block 5s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 580px;
+  }
+
+  100% {
+    left: -20px;
+  }
+}
